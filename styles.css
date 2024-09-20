@@ -1,2 +1,80 @@
+.holder{
+	display:flex;
+	justify-content:space-between;
+	margin:50px;
+	height:50px;
+	width:auto;
+}
+.item{
+	height:100%;
+	width:50px;
+	font-size:30px;
+	font-weight:bolder
+}
+.holder div:nth-child(1) {
+  /* Styles for the first item */
+		background-color:red;
+	order:2;
 
-/* Your CSS Code here. */
+}
+
+.holder div:nth-child(2) {
+  /* Styles for the second item */
+		background-color:blue;
+	order:3;
+	
+
+}
+
+.holder div:nth-child(3) {
+  /* Styles for the third item */
+	background-color:green;
+}
+.holder div {
+     /* Items can grow to fill available space */
+  flex-shrink: 1;    /* Items can shrink when space decreases */
+   /* Default size of items */
+  margin: 10px;      /* Adds space around the items */
+}
+
+.holder2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+	
+}
+
+.holder2 div {
+    width:50px; /* Divide width evenly across the first row */
+    margin-right: 5px;
+	flex-grow: 0; /* Prevent items from growing */
+    flex-shrink: 0;
+}
+
+.holder2 div:nth-child(2) {
+    width: 50px; /* Force the 7th item to take the whole next row */
+    margin-top: 10px;
+}
+
+.holder2 div:nth-child(3),
+.holder2 div:nth-child(4),
+.holder2 div:nth-child(5),
+.holder2 div:nth-child(6),
+.holder2 div:nth-child(7) {
+    background-color: green;
+    border: 1px solid black;
+	order:0;
+}
+
+.holder2 div:nth-child(1),
+.holder2 div:nth-child(2) {
+    background-color: red;
+    border: 1px solid black;
+	order:1;
+}
+
+
+.holder2 div:nth-child(2) {
+    background-color: blue;
+	
+}
